@@ -1,0 +1,609 @@
+*{
+    margin: 0%;
+}
+
+@font-face {
+    font-family: 'Monster';
+    src: url('font/Lemon\ Days.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    width: 1365px;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.cascaron{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(254, 193, 7);
+}
+
+.header{
+    width: 100%;
+    height: 20%;
+}
+
+.left{
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.arriba{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 244, 190);
+    border-bottom-right-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.botones{
+    width: 100%;
+    height: 70%;
+}
+
+.empleado{
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+}
+
+.empleado img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.comanda{
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+}
+
+.comanda img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.salir{
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+}
+
+.salir img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.palabras{
+    width: 100%;
+    height: 30%;
+}
+
+h5{
+    font-family: Monster;
+    font-size: 15px;
+}
+
+.emp{
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com{
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sal{
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abajo{
+    width: 100%;
+    height: 30%;
+}
+
+select{
+    width: 70%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 19px;
+	padding: 8px 12px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+select{
+    color: rgba(0, 0, 0, 0.8);;
+}
+
+.center{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.center img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.right{
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.name{
+    width: 20%;
+    height: 35%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 43px;
+    border-radius: 10px;
+}
+
+.busqueda{
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.busqueda input{
+    width: 100%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 19px;
+	padding: 8px 12px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+.search{
+    width: 20%;
+    height: 25%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.search-btn{
+	font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+}
+
+.cuerpo{
+    width: 100%;
+    height: 80%;  
+}
+
+.lista{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.id{
+    width: 10%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px black solid;
+    font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.grupo{
+    width: 17%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px black solid;
+    font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.producto{
+    width: 27%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px black solid;
+    font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.descripcion{
+    width: 33.2%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px black solid;
+    font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.precio{
+    width: 12%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px black solid;
+    font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+    border-top-right-radius: 10px;
+}
+
+.titulo{
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px black solid;
+    background-color: black;
+}
+
+.informacion{
+    width: 100%;
+    height: 95%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.datos{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.agregar{
+    width: 100%;
+    height: 60%;
+}
+
+.añadir{
+    width: 100%;
+    height: 80%;
+}
+
+.titulos{
+    width: 20%;
+    height: 98%;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.info{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cat, .product, .descrip, .price{
+    width: 90%;
+    height: 22%;
+    display:flex;
+    justify-content: left;
+    align-items: center;;
+    margin: 0px 0px 0px 10px;
+}
+
+.cat select{
+    width: 54%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 19px;
+	padding: 8px 12px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+.cat select{
+    color: rgba(0, 0, 0, 0.8);;
+}
+
+.btn-up{
+    width: 50%;
+    height: 12%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.buton{
+    width: 98%;
+    height: 12%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.buton-add{
+    width: 48%;
+    height: 12%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.add-btn{
+	font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.upgrade-btn{
+	font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: center;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.delete-btn{
+	font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.eliminar{
+    width: 100%;
+    height: 20%;
+}
+
+.centro{
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.alinear{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.date{
+    width: 90%;
+    height: 60%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+
+.btn{
+    width: 98%;
+    height: 40%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.agregar input{
+    width: 50%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 19px;
+	padding: 8px 12px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+h4{
+    font-size: 19px;
+	font-weight: normal;
+	text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+    font-size: 19px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.tabla,.tabla1{
+    width: 100%;
+    height: 40%;
+}
+
+.observaciones{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagen{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tema{
+    width: 100%;
+    height: 15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 1px 0px 0px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.vacio{
+    width: 100%;
+    height: 66%;
+}
+
+textarea{
+    width: 100%;
+    height: 99%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pie{
+    width: 100%;
+    height: 15%;
+    margin-top: 10px;
+}
+
+.cancel{
+    width: 32.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.edit{
+    width: 32.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.save{
+    width: 32.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin-left: 2px;
+    border-radius: 10px;
+}

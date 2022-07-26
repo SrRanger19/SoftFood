@@ -1,0 +1,484 @@
+*{
+    margin: 0%;
+}
+
+@font-face {
+    font-family: 'Monster';
+    src: url('font/Lemon\ Days.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    width: 1365px;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+input{
+    width: 89%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 19px;
+	padding: 8px 12px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+h4{
+    font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+    font-family: Monster;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+    font-size: 19px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.left{
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(254, 193, 7);
+}
+
+.ficha{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+}
+
+.foto{
+    width: 20%;
+    height: 100%;
+}
+
+.foto img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    width: 77%;
+    height: 100%;
+    margin: 0px 0px 0px 10px;
+}
+
+.Empleados{
+    width: 100%;
+    height: 80%;
+}
+
+.id{
+    width: 10%;
+    height: 100%;
+    border-right: 1px black solid;
+}
+
+.nombre{
+    width: 29%;
+    height: 100%;
+    border-right: 1px black solid;
+}
+
+.apellido{
+    width: 30%;
+    height: 100%;
+    border-right: 1px black solid;
+}
+
+.direccion{
+    width: 30%;
+    height: 100%;
+    border-right: 1px black solid;
+}
+
+.titulo{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px black solid;
+    background-color: black;
+}
+
+.right{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(254, 193, 7);
+}
+
+.datos{
+    width: 100%;
+    height: 50%;
+}
+
+.arriba{
+    width: 100%;
+    height: 40%;
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 244, 190);
+    border-bottom-left-radius: 20px;
+}
+
+.imagenes{
+    width: 100%;
+    height: 65%;
+}
+
+.btn-inventario{
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+}
+
+.btn-inventario img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-comanda{
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 55px;
+}
+.btn-comanda img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.btn-salida{
+    width: 84px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+}
+
+.btn-salida img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.palabras{
+    width: 100%;
+    height: 35%;
+}
+
+.inv{
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com{
+    width: 80px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sal{
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px 0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abajo{
+    width: 100%;
+    height: 60%;
+}
+
+.dias{
+    width: 19.7%;
+    height: 100%;
+    background-color: black;
+    border-bottom: 1px rgb(254, 193, 7) solid;
+    border-top: 1px rgb(254, 193, 7) solid;
+    border-right: 1px rgb(254, 193, 7) solid;
+    border-left: 1px rgb(254, 193, 7) solid;
+    border-radius: 15px;
+}
+
+.dias input{
+    width: 89%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: white;
+	font-size: 19px;
+	padding: 8px 12px;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+.relleno{
+    width: 100%;
+    height: 50%;
+}
+
+.extra{
+    width: 39.8%;
+    height: 100%;
+    border-right: 1px black solid;
+}
+
+.title{
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.info{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.observaciones{
+    width: 55%;
+    height: 80%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.imagen{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tema{
+    width: 100%;
+    height: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 1px 0px 0px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+textarea{
+    width: 99%;
+    height: 99%;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pie{
+    width: 65%;
+    height: 13%;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+.cancel{
+    width: 32.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.edit{
+    width: 32.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.save{
+    width: 32.5%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Marketing Script', serif;
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	margin-top: -5px;
+	cursor: pointer;
+	float: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin-left: 2px;
+    border-radius: 10px;
+}
+
+
+.texto{
+    width: 100%;
+    height: 100%;
+    border-right: 1px black solid;
+}
+
+.puesto{
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px black solid;
+}
+
+.sueldo{
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px black solid;
+}
+
+.nss{
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px black solid;
+}
+
+.estudios{
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px black solid;
+}
+
+.carta{
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px black solid;
+}
+
+.antecedentes{
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px black solid;
+}
+
+.bus{
+    width: 100%;
+    height: 60%;
+}
+
+.search{
+    width: 15%;
+    height: 40%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: blue;
+    margin-top: 23px;
+    margin-right: 5px;
+}
+
+.name2{
+    width: 15%;
+    height: 50%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.busqueda{
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.der{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}

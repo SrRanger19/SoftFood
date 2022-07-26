@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="comanda.css">
+    <script src="comanda.js"></script>
+    <title>SoftFood</title>
+</head>
+<body>
+    <div class="cascaron">
+        <div class="arriba">
+            <div class="menu" style="float: left;">
+                
+            </div>
+            <div class="center" style="float: left;">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="vacio" style="float: left;">
+                <div class="panel">
+                    <div class="botones">
+                        <div class="empleado" style="float: left;">
+                            <a href="empleados.html"><img src="img/btnEmpleados.png" alt=""></a>
+                        </div>
+                        <div class="inventario" style="float: left;">
+                            <a href="inventario.html"> <img src="img/btnInventario.png" alt=""></a>
+                        </div>
+                        <div class="salir" style="float: left;">
+                            <a href="login.html"><img src="img/btnSalir.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="palabras">
+                        <div class="emp" style="float: left;">
+                            <a href="empleados.html"><h4>Empleados</h4></a>
+                        </div>
+                        <div class="inv" style="float: left;">
+                            <a href="inventario.html"><h4>Inventario</h4></a>
+                        </div>
+                        <div class="sal" style="float: left;">
+                            <a href="login.html"><h4>Salir</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="void" style="text-align: center;">
+
+                </div>
+            </div>
+        </div>
+        <div class="abajo">
+            <div class="left" style="float: left;">
+                <div class="categoria">
+                    <div class="titulo3">
+                        <h3>Categoria</h3>
+                    </div>
+                    <div class="relleno">
+                        <div class="uno" style="float: left;">
+                            <a onclick="hamburguesa()"Aceptar>
+                            <div class="hamburguesa">
+                                <img src="img/hamburguesa.png" alt="">
+                            </div>
+                            </a>
+                            <a onclick="taco()"Aceptar>
+                            <div class="taco">
+                                <img src="img/taco.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="dos" style="float: left;">
+                            <a onclick="burrito()"Aceptar>
+                            <div class="burrito">
+                                <img src="img/burrito.png" alt="">
+                            </div>
+                            </a>
+                            <a onclick="orden()"Aceptar>
+                            <div class="orden">
+                                <img src="img/orden.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="tres" style="float: left;">
+                            <a onclick="tlayuda()"Aceptar>
+                            <div class="tlayuda">
+                                <img src="img/tlayuda.png" alt="">
+                            </div>
+                            </a>
+                            <a onclick="quesadilla()"Aceptar>
+                            <div class="quesadilla">
+                                <img src="img/quesadilla.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cuatro" style="float: left;">
+                            <a onclick="postre()"Aceptar>
+                            <div class="postre">
+                                <img src="img/postre.png" alt="">
+                            </div>
+                            </a>
+                            <a onclick="natural()"Aceptar>
+                            <div class="natural">
+                                <img src="img/natural.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cinco" style="float: left;">
+                            <a onclick="embotellado()"Aceptar>
+                            <div class="embotellado">
+                                <img src="img/embotellado.png" alt="">
+                            </div>
+                            </a>
+                            <a onclick="cerveza()"Aceptar>
+                            <div class="cerveza">
+                                <img src="img/cerveza.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="platillo">
+                    <div class="titulo2">
+                        <h3>Productos</h3>
+                    </div>
+                    <div class="relleno2">
+                        <div class="uno" style="float: left;">
+                            <div class="one" onclick="subOrden1()"Aceptar>
+                                <h4><label id="label1"></label></h4>
+                            </div>
+                            <div class="two" onclick="subOrden2()"Aceptar>
+                                <h4><label id="label2"></label></h4>
+                            </div>
+                            <div class="tree" onclick="subOrden3()"Aceptar>
+                                <h4><label id="label3"></label></h4>
+                            </div>
+                            <div class="four" onclick="subOrden4()"Aceptar>
+                                <h4><label id="label4"></label></h4>
+                            </div>
+                            <div class="five" onclick="subOrden5()"Aceptar>
+                                <h4><label id="label5"></label></h4>
+                            </div>
+                        </div>
+                        <div class="dos" style="float: left;">
+                            <div class="one" onclick="subOrden6()"Aceptar>
+                                <h4><label id="label6"></label></h4>
+                            </div>
+                            <div class="two" onclick="subOrden7()"Aceptar>
+                                <h4><label id="label7"></label></h4>
+                            </div>
+                            <div class="tree" onclick="subOrden8()"Aceptar>
+                                <h4><label id="label8"></label></h4>
+                            </div>
+                            <div class="four" onclick="subOrden9()"Aceptar>
+                                <h4><label id="label9"></label></h4>
+                            </div>
+                            <div class="five" onclick="subOrden10()"Aceptar>
+                                <h4><label id="label10"></label></h4>
+                            </div>
+                        </div>
+                        <div class="tres" style="float: left;">
+                            <div class="one" onclick="subOrden11()"Aceptar>
+                                <h4><label id="label11"></label></h4>
+                            </div>
+                            <div class="two" onclick="subOrden12()"Aceptar>
+                                <h4><label id="label12"></label></h4>
+                            </div>
+                            <div class="tree" onclick="subOrden13()"Aceptar>
+                                <h4><label id="label13"></label></h4>
+                            </div>
+                            <div class="four" onclick="subOrden14()"Aceptar>
+                                <h4><label id="label14"></label></h4>
+                            </div>
+                            <div class="five" onclick="subOrden15()"Aceptar>
+                                <h4><label id="label15"></label></h4>
+                            </div>
+                        </div>
+                        <div class="cuatro" style="float: left;">
+                            <div class="one" onclick="subOrden16()"Aceptar>
+                                <h4><label id="label16"></label></h4>
+                            </div>
+                            <div class="two" onclick="subOrden17()"Aceptar>
+                                <h4><label id="label17"></label></h4>
+                            </div>
+                            <div class="tree" onclick="subOrden18()"Aceptar>
+                                <h4><label id="label18"></label></h4>
+                            </div>
+                            <div class="four" onclick="subOrden19()"Aceptar>
+                                <h4><label id="label19"></label></h4>
+                            </div>
+                            <div class="five" onclick="subOrden20()"Aceptar>
+                                <h4><label id="label20"></label></h4>
+                            </div>
+                        </div>
+                        <div class="cinco" style="float: left;">
+                            <div class="one" onclick="subOrden21()"Aceptar>
+                                <h4><label id="label21"></label></h4>
+                            </div>
+                            <div class="two" onclick="subOrden22()"Aceptar>
+                                <h4><label id="label22"></label></h4>
+                            </div>
+                            <div class="tree" onclick="subOrden23()"Aceptar>
+                                <h4><label id="label23"></label></h4>
+                            </div>
+                            <div class="four" onclick="subOrden24()"Aceptar>
+                                <h4><label id="label24"></label></h4>
+                            </div>
+                            <div class="five" onclick="subOrden25()"Aceptar>
+                                <h4><label id="label25"></label></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right" style="float: left;">
+                <div class="compra">
+                    <div class="peticion">
+                        <div class="specification">
+                            <div class="producto" style="float: left;">
+                                <div class="tema" style="float: left;">
+                                    <h3 id="prueba">Producto:</h3>
+                                </div>
+                                <div class="descripcion" style="float: left;">
+                                    <input type="text" id="producto" value=""/>
+                                </div>
+                            </div>
+                            <div class="cantidad" style="float: left;">
+                                <div class="tema" style="float: left;">
+                                    <h3>Cantidad:</h3>
+                                </div>
+                                <div class="descripcion" style="float: left;">
+                                    <input type="text" id="cantidad" value="" placeholder="0"/>
+                                </div>
+                            </div>
+                            <div class="especificacion" style="float: left;">
+                                <div class="tema" style="float: left;">
+                                    <h3>Especifi:</h3>
+                                </div>
+                                <div class="descripcion" style="float: left;">
+                                    <input type="text" id="especificacion" value=""/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-actualizar">
+                            <div class="nada" style="float: left;">
+
+                            </div>
+                            <div class="btnup" style="float: left;">
+                                <span class="update-btn" onclick="update()"Aceptar>Aceptar&raquo;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista">
+                        <div class="cat" style="float: left;">
+                            <div class="titulo">
+                                <h3>CATEGORIA</h3>
+                            </div>
+                            <div class="informacion">
+                                <table id="tabla1" style="text-align: center;">
+                                    <tr align="center">
+                                        <td id="cat_table">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="prod" style="float: left;">
+                            <div class="titulo">
+                                <h3>PRODUCTO</h3>
+                            </div>
+                            <div class="informacion">
+                                <table id="tabla2" style="text-align: center;">
+                                    <tr align="center">
+                                        <td id="prod_table">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="cant" style="float: left;">
+                            <div class="titulo">
+                                <H3>CANT.</H3>
+                            </div>
+                            <div class="informacion">
+                                <table id="tabla3" style="text-align: center;">
+                                    <tr align="center">
+                                        <td id="cant_table">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="esp" style="float: left;">
+                            <div class="titulo">
+                                <H3>ESPECIFICACION</H3>
+                            </div>
+                            <div class="informacion">
+                                <table id="tabla4" style="text-align: center;">
+                                    <tr align="center">
+                                        <td id="especifi_table">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price" style="float: left;">
+                            <div class="titulo">
+                                <H3>PRECIO</H3>
+                            </div>
+                            <div class="informacion">
+                                <table id="tabla5" style="text-align: center;">
+                                    <tr align="center">
+                                         <td id="precio_table">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="cuenta">
+                        <div class="izq" style="float: left;">
+                            <div class="top">
+                                <div class="title" style="float: left;">
+                                    <h3>Subtotal:</h3>
+                                </div>
+                                <div class="info" style="float: left;">
+                                    <input type="text" id="Subtotal" value="0.00" readonly="readonly"/>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="title" style="float: left;">
+                                    <h3>Descuento:</h3>
+                                </div>
+                                <div class="info" style="float: left;">
+                                    <input type="text" id="Descuento" value="0.00"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="der" style="float: left;">
+                            <div class="top">
+                                <div class="title" style="float: left;">
+                                    <h3>IVA:</h3>
+                                </div>
+                                <div class="info" style="float: left;">
+                                    <input type="text" id="IVA" value="0.00" readonly="readonly"/>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="title" style="float: left;">
+                                    <h3>Total:</h3>
+                                </div>
+                                <div class="info" style="float: left;">
+                                    <input type="text" id="Total" value="0.00" readonly="readonly"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-acept">
+                        <div class="float" style="float: left;">
+
+                        </div>
+                        <div class="btnacept" style="float: left;">
+                            <span class="acept-btn" onclick="generarTicket()"Aceptar>Generar ticket&raquo;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

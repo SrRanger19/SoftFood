@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="empleados.css">
+    <script src="BinarySearchTree.js"></script>
+    <title>SoftFood</title>
+</head>
+<body>
+    <div class="left" style="float: left;">
+        <div class="ficha">
+            <div class="foto" style="float: left;">
+                <img src="img/foto.png" alt="">
+            </div>
+            <div class="name" style="float: left;">
+                <h2 align="left">Empleado: </h2>
+                <br>
+                <label for="" id="empleado"></label>
+            </div>
+        </div>
+        <div class="Empleados" align="center">
+            <div class="id" style="float: left;">
+                <div class="titulo" id="idUsuario">
+                    <h3>ID</h3>
+                </div>
+                <table id="tabla1" >
+                <div class="contenido" id="idUsuario">
+                </div>
+            </table>
+            </div>
+            <div class="nombre" style="float: left;">
+                <div class="titulo">
+                    <h3>Usuario</h3>
+                </div>
+                <table id="tabla2">
+                <div class="contenido">
+
+                </div>
+            </table>
+            </div>
+            <div class="apellido" style="float: left;">
+                <div class="titulo">
+                    <h3>Correo</h3>
+                </div>
+                <table id="tabla3">
+                <div class="contenido">
+
+                </div>
+            </table>
+            </div>
+            <div class="direccion" style="float: left;">
+                <div class="titulo">
+                    <h3>Contraseña</h3>
+                </div>
+                <table id="tabla4">
+                <div class="contenido">
+
+                </div>
+            </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right" style="float: left;">
+        <div class="datos">
+           <div class="arriba">
+                <div class="logo" style="float: left;">
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="der" style="float: left;">
+                    <div class="menu">
+                        <div class="imagenes">
+                            <div class="btn-inventario" style="float: left;">
+                                <a href="inventario.html"><img src="img/btnInventario2.png" alt=""></a>
+                            </div>
+                            <div class="btn-comanda" style="float: left;">
+                                <a href="comanda.html"><img src="img/btnComanda.png" alt=""></a>
+                            </div>
+                            <div class="btn-salida" style="float: left;">
+                                <a href="login.html"><img src="img/btnSalir.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="palabras">
+                            <div class="inv" style="float: left;">
+                                <a href="inventario.html"><h4>Inventario</h4></a>
+                            </div>
+                            <div class="com" style="float: left;">
+                                <a href="comanda.html"><h4>Comanda</h4></a>
+                            </div>
+                            <div class="sal" style="float: left;">
+                                <a href="login.html"><h4>Salir</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bus">
+                        <div class="name2" style="float: left;">
+                            <h4>Empleado:</h4>
+                        </div>
+                        <div class="busqueda" style="float: left;">
+                            <input placeholder="Correo" type="text" id="inpBuscar" value=""/>
+                        </div>
+                        
+                        <div class="search" style="float: left;">
+                            <span class="search-btn"onclick="buscarUsuario()"Aceptar>Buscar&raquo;</span>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="abajo">
+                <div class="dias" style="float: left;" align="center">
+                    <h2>Lunes</h2>
+                    <br>
+                    <h3>Jornada intensiva:</h3>
+                    <br>
+                    <input type="text" placeholder="Horario de entrada" style="text-align: center;" id="hentrada1" disabled>
+                    <input type="text" placeholder="Horario de salida" style="text-align: center;" id="hsalida1" disabled>
+                </div>
+                <div class="dias" style="float: left;" align="center">
+                    <h2>Martes</h2>
+                    <br>
+                    <h3>Jornada intensiva:</h3>
+                    <br>
+                    <input type="text" placeholder="Horario de entrada" style="text-align: center;" id="hentrada2" disabled>
+                    <input type="text" placeholder="Horario de salida" style="text-align: center;" id="hsalida2" disabled>
+                   
+                </div>
+                <div class="dias" style="float: left;" align="center">
+                    <h2>Miercoles</h2>
+                    <br>
+                    <h3>Jornada intensiva:</h3>
+                    <br>
+                    <input type="text" placeholder="Horario de entrada" style="text-align: center;" id="hentrada3" disabled>
+                    <input type="text" placeholder="Horario de salida" style="text-align: center;" id="hsalida3" disabled>
+                </div>
+                <div class="dias" style="float: left;" align="center">
+                    <h2>Jueves</h2>
+                    <br>
+                    <h3>Jornada intensiva:</h3>
+                    <br>
+                    <input type="text" placeholder="Horario de entrada" style="text-align: center;" id="hentrada4" disabled>
+                    <input type="text" placeholder="Horario de salida" style="text-align: center;" id="hsalida4" disabled>
+                </div>
+                <div class="dias" style="float: left;" align="center">
+                    <h2>Viernes</h2>
+                    <br>
+                    <h3>Jornada intensiva:</h3>
+                    <br>
+                    <input type="text" placeholder="Horario de entrada" style="text-align: center;" id="hentrada5" disabled>
+                    <input type="text" placeholder="Horario de salida" style="text-align: center;" id="hsalida5" disabled>
+                </div>
+           </div>
+        </div>
+        
+        <div class="relleno">
+            <div class="extra" style="float: left;">
+                <div class="puesto">
+                   <div class="title" style="float: left;">
+                    <h3>Puesto:</h3>
+                   </div>
+                   <div class="info" style="float: left;">
+                        <input type="text" id="puesto" disabled>
+                   </div>
+                </div>
+                <div class="sueldo">
+                    <div class="title" style="float: left;">
+                        <h3>Sueldo:</h3>
+                       </div>
+                       <div class="info" style="float: left;">
+                            <input type="text" id="sueldo" disabled>
+                       </div>
+                </div>
+                <div class="nss">
+                    <div class="title" style="float: left;">
+                        <h3>NSS:</h3>
+                       </div>
+                       <div class="info" style="float: left;">
+                            <input type="text" id="nss" disabled>
+                       </div>
+                </div>
+                <div class="estudios">
+                    <div class="title" style="float: left;">
+                        <h3>Estudios:</h3>
+                       </div>
+                       <div class="info" style="float: left;">
+                            <input type="text" id="estudios" disabled>
+                       </div>
+                </div>
+                <div class="carta">
+                    <div class="title" style="float: left;">
+                        <h3>C/R:</h3>
+                       </div>
+                       <div class="info" style="float: left;">
+                            <input type="text" id="c/r" disabled>
+                       </div>
+                </div>
+                <div class="antecedentes">
+                    <div class="title" style="float: left;">
+                        <h3>A/P:</h3>
+                       </div>
+                       <div class="info" style="float: left;">
+                            <input type="text" id="a/p" disabled>
+                       </div>
+                </div>
+            </div>
+            <div class="observaciones" style="float: left;">
+                <div class="tema">
+                    <h4>Observaciones del empleado</h4>
+                </div>
+                <div class="vacio">
+                    <textarea name="" id="observacion" cols="43" rows="9" disabled></textarea>
+                </div>
+                <div class="pie">
+                    <div class="cancel" style="float: left;">
+                        <span class="cancel-btn" onclick="cancelar()"Aceptar>&laquo;Cancelar</span>
+                    </div>
+                    <div class="edit" style="float: left;">
+                        <span class="edit-btn" onclick="editar()"Aceptar>Editar</span>
+                    </div>
+                    <div class="save" style="float: left;">
+                        <span class="save-btn" onclick="guardar()"Aceptar>Guardar&raquo;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src=`probarConexion.js`></script>
+</html>

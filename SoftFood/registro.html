@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <script src="registro.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>SoftFood</title>
+</head>
+    <body>
+        <div class="left" style="float: left;">
+            <div class="relleno" style="float: left;">
+
+            </div>
+            <div class="efecto" style="float: left;">
+                <img src="img/efecto2.png" alt="">
+            </div>
+        </div>
+        <div class="center" style="float: left;">
+            <div class="bg-wrapper">
+                <div class="bg-grad orange active"></div>
+            </div>
+            <div class="logo" align="center">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="login-wrapper">
+                <div class="x-wrapper">
+                    <div class="y-wrapper">
+                        <div class="title-wrapper">
+                            <h2>Bienvenido!</h2>
+                            <h4>Por favor, rellene el formulario</h4>
+                        </div>
+                        <div class="input-box">
+                            <label id="validacion"></label>
+                            <input type="text" id="username" value="" placeholder="Usuario" />
+                            <input type="text" id="correo" value="" placeholder="Correo" />
+                            <input type="password" id="password" value="" placeholder="Contraseña" /><span class="show-pass icon-eye" title="show characters"></span>
+                            <input type="password" id="confirm" value="" placeholder="Confirmar Contraseña" /><span class="show-pass icon-eye" title="show characters"></span>
+                            <select name="ciudad" id="txto">
+                                <option selected>...</option>
+                                  <option value="dueño">Dueño</option>
+                                  <option value="empleado">Empleado</option>
+                              </select>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="login.html"><span align="left" class="cancelar-btn">&laquo;Cancelar</span></a>
+                            <span class="login-btn" onclick="registrarse()"Aceptar>Finalizar Registro&raquo;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right" style="float: left;">
+            <div class="efecto" style="float: left;">
+                <img src="img/efecto.png" alt="">
+            </div>
+            <div class="relleno" style="float: left;">
+
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src=`probarConexion.js`></script>
+</html>

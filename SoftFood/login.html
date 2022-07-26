@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>SoftFood</title>
+</head>
+    <body>
+        <div class="left" style="float: left;">
+            <div class="relleno" style="float: left;">
+
+            </div>
+            <div class="efecto" style="float: left;">
+                <img src="img/efecto2.png" alt="">
+            </div>
+        </div>
+        <div class="center" style="float: left;">
+            <div class="bg-wrapper">
+                <div class="bg-grad orange active"></div>
+            </div>
+            <div class="logo" align="center">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="login-wrapper">
+                <div class="x-wrapper">
+                    <div class="y-wrapper">
+                        <div class="title-wrapper">
+                            <h2>Bienvenido!</h2>
+                            <h4>Por favor, inicie sesion</h4>
+                        </div>
+                        <div class="input-box">
+                            <label id="validacion"></label>
+                            <input type="text" id="username" value="" placeholder="Usuario o Correo" />
+                            <input type="password" id="password" value="" placeholder="Contraseña" /><span class="show-pass icon-eye" title="show characters"></span>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="registro.html"><span align="left" class="register-btn">&laquo;Registrarse</span></a>
+                            <span class="login-btn" onclick="iniciarSesion()"Aceptar>Iniciar Sesion&raquo;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right" style="float: left;">
+            <div class="efecto" style="float: left;">
+                <img src="img/efecto.png" alt="">
+            </div>
+            <div class="relleno" style="float: left;">
+
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src=`probarConexion.js`></script>
+</html>

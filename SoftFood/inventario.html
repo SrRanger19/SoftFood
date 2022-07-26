@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="inventario.css">
+    <script src="inventario.js"></script>
+    <title>SoftFood</title>
+</head>
+<body>
+  <div class="cascaron">
+   <div class="header">
+    <div class="left" style="float: left;">
+        <div class="arriba">
+            <div class="botones">
+                <div class="empleado" style="float: left;">
+                    <a href="empleados.html"><img src="img/btnEmpleados.png" alt=""></a>
+                </div>
+                <div class="comanda" style="float: left;">
+                    <a href="comanda.html"> <img src="img/btnComanda.png" alt=""></a>
+                </div>
+                <div class="salir" style="float: left;">
+                    <a href="login.html"><img src="img/btnSalir.png" alt=""></a>
+                </div>
+            </div>
+            <div class="palabras">
+                <div class="emp" style="float: left;">
+                    <a href="empleados.html"><h5>Empleados</h5></a>
+                </div>
+                <div class="com" style="float: left;">
+                    <a href="comanda.html"><h5>Comanda</h5></a>
+                </div>
+                <div class="sal" style="float: left;">
+                    <a href="login.html"><h5>Salir</h5></a>
+                </div>
+            </div>
+        </div>
+        <div class="abajo" style="text-align: center;">
+            <select name="ciudad" id="txto1"onclick="buscarDatos()"Aceptar>
+                <option value="---">---</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Tlayuda">Tlayuda</option>
+                <option value="Taco">Taco</option>
+                <option value="Burrito">Burrito</option>
+                <option value="Quesadilla">Quesadilla</option>
+                <option value="postre">Postre</option>
+                <option value="Orden">Orden</option>
+                <option value="natural">Agua natural</option>
+                <option value="Embotellado">Embotellado</option>
+                <option value="Cerveza">Cerveza</option>
+            </select>
+        </div>
+    </div>
+    <div class="center" style="float: left;">
+        <img src="img/logo2.png" alt="">
+    </div>
+    <div class="right" style="float: left;">
+        <div class="name" style="float: left;">
+            <h4>Producto:</h4>
+        </div>
+        <div class="busqueda" style="float: left;">
+            <input type="text" id="buscar" value=""/>
+        </div>
+        <div class="search" style="float: left;">
+            <span class="search-btn"onclick="buscarDato()"Aceptar>Buscar&raquo;</span>
+        </div>
+    </div>
+   </div>
+   <div class="cuerpo" style="text-align: center;">
+        <div class="lista" style="float: left;">
+            <div class="id" style="float: left;">
+                <div class="titulo">
+                    <h3>ID</h3>
+                </div>
+                <div class="informacion">
+                    <table id="tabla1" style="text-align: center;">
+                        <tr align="center">
+                            <td>
+                            <!--<h4><label for=""></label></h4>-->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="grupo" style="float: left;">
+                <div class="titulo">
+                    <h3>CATEGORIA</h3>
+                </div>
+                <div class="informacion">
+                    <table id="tabla2" style="text-align: center;">
+                        <tr align="center">
+                            <td>
+                               <!-- <h4><label for=""></label></h4>-->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="producto" style="float: left;">
+                <div class="titulo">
+                    <H3>PRODUCTO</H3>
+                </div>
+                <div class="informacion">
+                    <table id="tabla3" style="text-align: center;">
+                        <tr align="center">
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="descripcion" style="float: left;">
+                <div class="titulo">
+                    <H3>DESCRIPCION</H3>
+                </div>
+                <div class="informacion">
+                    <table id="tabla4" style="text-align: center;">
+                        <tr align="center">
+                            <td>
+                               
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="precio" style="float: left;">
+                <div class="titulo">
+                    <H3>PRECIO</H3>
+                </div>
+                <div class="informacion">
+                    <table id="tabla5" style="text-align: center;">
+                        <tr align="center">
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="datos" style="float: left;">
+            <div class="agregar">
+               <div class="añadir">
+                    <div class="titulos" style="float: left;">
+                        <div class="cat">
+                            <h4>Categoria:</h4>
+                        </div>
+                        <div class="product">
+                            <h4>Producto:</h4>
+                        </div>
+                        <div class="descrip">
+                            <h4>Descripcion:</h4>
+                        </div>
+                        <div class="price">
+                            <h4>Precio:</h4>
+                        </div>
+                        <div class="buton">
+
+                        </div>
+                    </div>
+                    <div class="info" style="float: left;" align="left">
+                        <div class="cat">
+                            <select name="ciudad" id="txto2">
+                                <option value="Hamburguesa">Hamburguesa</option>
+                                <option value="Tlayuda">Tlayuda</option>
+                                <option value="Taco">Taco</option>
+                                <option value="Burrito">Burrito</option>
+                                <option value="Quesadilla">Quesadilla</option>
+                                <option value="postre">Postre</option>
+                                <option value="Orden">Orden</option>
+                                <option value="natural">Agua natural</option>
+                                <option value="Embotellado">Embotellado</option>
+                                <option value="Cerveza">Cerveza</option>
+                            </select>
+                        </div>
+                        <div class="product">
+                            <input type="text" id="product" value=""/>
+                        </div>
+                        <div class="descrip">
+                            <input type="text" id="descrip" value=""/>
+                        </div>
+                        <div class="price">
+                            <input type="text" id="price" value=""/>
+                        </div>
+                        <div class="btn-up" style="float: left;">
+                            <span class="upgrade-btn"onclick="actualizarDatos()"Activar>&laquo;Actualizar Producto</span>
+                            <label id="validacion"></label>
+                        </div>
+                        <div class="buton-add" style="float: left;">
+                            <span class="add-btn"onclick="cargarDatos()"Activar>Agregar Producto&raquo;</span>
+                        </div>
+                        <label id="validacion"></label>
+                    </div>
+               </div>
+               <div class="eliminar">
+                    <div class="centro" style="float: left;">
+                        <div class="date">
+                            <h4>Producto:</h4>
+                        </div>
+                        <div class="btn">
+
+                        </div>
+                    </div>
+                    <div class="alinear" style="float: left;">
+                        <div class="date" align="left">
+                            <input type="text" id="delete" value=""/>
+                        </div>
+                        <div class="btn">
+                            <span class="delete-btn"onclick="borrarDatos()"Activar>Eliminar Producto&raquo;</span>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="tabla">
+                <div class="imagen" style="float: left;">
+
+                </div>
+                <div class="observaciones" style="float: left;">
+                    <div class="tema">
+                        <h4>Observaciones del producto</h4>
+                    </div>
+                    <div class="vacio">
+                        <textarea name="" id="observacion" disabled="true" cols="43" rows="9"></textarea>
+                    </div>
+                    <div class="pie">
+                        
+                        <div class="cancel" style="float: left;">
+                            <span class="cancel-btn"onclick="cancelartexto()"Activar>&laquo;Cancelar</span>
+                        </div>
+                        <div class="edit" style="float: left;">
+                            <span class="edit-btn"onclick="habilitatexto()"Activar>Editar</span>
+                        </div>
+                        <div class="save" style="float: left;">
+                            <span class="save-btn"onclick="guardarTA()"Activar>Guardar&raquo;</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="imagen" style="float: left;">
+
+                </div>
+            </div>
+        </div>
+   </div>
+  </div>
+</body>
+<script type="text/javascript" src=`probarConexion.js`></script>
+</html>
